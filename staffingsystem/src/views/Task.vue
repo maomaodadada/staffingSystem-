@@ -1,10 +1,12 @@
 <template>
-  <div></div>
+  <div>
+    1s
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Index'
+  name: 'Task'
 }
 </script>
 
