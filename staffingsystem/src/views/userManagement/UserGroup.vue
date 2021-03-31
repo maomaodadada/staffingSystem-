@@ -1,12 +1,10 @@
 <template>
-  <div>
-    1s
-  </div>
+  <div>UserGroup</div>
 </template>
 
 <script>
 export default {
-  name: 'Task'
+  name: 'UserGroup'
 }
 </script>
 

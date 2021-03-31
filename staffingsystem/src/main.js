@@ -2,12 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { Button, Container } from 'element-ui'
-
+import '@/assets/scss/reset.scss'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import Http from './api/index'
+Vue.use(Http)
 Vue.config.productionTip = false
 
-Vue.use(Button)
-Vue.use(Container)
+Vue.use(ElementUI)
 router.beforeEach((to, from, next) => {
   console.log('to', to)
   console.log('from', from)
