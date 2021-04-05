@@ -3,21 +3,20 @@
 </template>
 
 <script>
+import { indexApi } from '@/request/api'
 
 export default {
   name: 'Index',
   mounted () {
-    this.$get('http://localhost:3333/data/login.json', {}).then(res => {
+    console.log(indexApi)
+    indexApi.getIndexList({}).then(res => {
       console.log(res)
-      // localStorage.setItem('token', this.phone)
-      // this.$router.push({
-      //   name: 'Home'
-      // })
     })
-    // axios.get('http://localhost:3333/data/login.json ').then(response => {
-    //   console.log(response.data)
-    // }, response => {
-    //   console.log('error')
+    indexApi.postStuTable({}).then(res => {
+      console.log(res)
+    })
+    // this.$get('http://localhost:3333/data/login.json', {}).then(res => {
+    //   console.log(res)
     // })
   }
 }

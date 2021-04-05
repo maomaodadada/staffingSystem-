@@ -5,8 +5,6 @@ import store from './store'
 import '@/assets/scss/reset.scss'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import Http from './api/index'
-Vue.use(Http)
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
